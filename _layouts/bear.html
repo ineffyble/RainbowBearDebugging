@@ -1,0 +1,15 @@
+---
+layout: default
+---
+{% assign bear = page %}
+
+<article class="single">
+  {% include bear.html %}
+
+  <div class="content">
+    {{content}}
+
+    {% include share-buttons.html %}
+  </div>
+
+</article>

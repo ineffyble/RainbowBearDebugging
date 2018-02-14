@@ -1,0 +1,173 @@
+/* fonts */
+
+@import url(https://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic);
+
+body {
+	font: 1em/1.65em Georgia, 'Times New Roman', serif;
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, nav, body > footer, body > header .description, .button, .meta {
+	font-family: 'Karla', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* site header */
+
+body > header {
+	width: 100%;
+	text-align: center;
+	padding: 0 0 2em 0;
+}
+
+header .logo {
+	display: inline-block;
+	width: 100%;
+	height: 400px;
+	vertical-align: middle;
+	background: url('/assets/img/header.png') center center;
+	background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+	header .logo {
+		height: 200px;
+	}
+}
+
+body > header .description {
+	font-style: italic;
+	margin: 1.5em 0;
+}
+
+/* main content */
+
+body > main {
+	width: 80%;
+	margin: 0 auto;
+	overflow: auto;
+}
+
+body > main article {
+	margin: 3em 0;
+}
+
+/* single article */
+
+.single h2 {
+	font-size: 2.75em;
+}
+
+/* content elements */
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.meta {
+	font-size: 0.9em;
+	text-transform: uppercase;
+	margin: 0 0 1em 0;
+}
+
+.button {
+	display: inline-block;
+	font-size: 0.9em;
+	font-weight: bold;
+	text-transform: uppercase;
+	border: 2px solid black;
+	padding: 0.25em 0.75em;
+	margin: 1em 0.5em 0 0;
+}
+
+.image {
+	width: 100%;
+	margin: 2em 0;
+}
+
+.image img {
+	max-width: 100%;
+	height: auto;
+	border: 0;
+}
+
+.bear {
+	clear: both;
+}
+
+.bear img {
+	width: 20%;
+	min-width: 300px;
+	float: left;
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+
+.recent-posts {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.recent-posts .post {
+	width: 48%;
+	border: 2px solid black;
+	padding: 5px;
+	margin: 5px;
+	text-align: center;
+}
+
+.recent-posts .post i {
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+/* navigation */
+
+nav {
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+	text-align: center;
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 0.5em 0;
+	margin: 0;
+}
+
+nav li {
+	display: inline;
+	padding: 0 0.5em;
+}
+
+nav a {
+	font-size: 0.9em;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+/* site footer */
+
+body > footer {
+	width: 100%;
+	font-size: 0.9em;
+	text-transform: uppercase;
+	text-align: center;
+	border-top: 1px solid black;
+	padding: 1em 0;
+	margin: 3em 0 0 0;
+}
+
+/* effects */
+
+.logo a:hover,
+.button:hover {
+	opacity: 0.8;
+	transition: all 0.2s;
+}
+
+/* nice simple helper classes, just like mother used to make */
+.center {
+	text-align: center;
+}

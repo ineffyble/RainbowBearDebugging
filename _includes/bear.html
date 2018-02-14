@@ -1,0 +1,14 @@
+<div class="bear">
+  {% if bear.image %}
+  <div class="image">
+    <img src="{{site.url}}/assets/img/{{bear.image}}" alt="{{page.name}}" />
+  </div>
+  {% endif %}
+  <div class="profile">
+    <h2>{{bear.name}}</h2>
+    <p><b>Colour:</b> {{bear.colour}}</p>
+    <p><b>Size:</b> {{bear.size}}</p>
+    <p><b>Strengths:</b> {{bear.strengths}}</p>
+    <p><b>Weaknesses:</b> {{bear.weaknesses}}</p>
+  </div>
+</div>
